@@ -15,7 +15,7 @@ I think largely based on the other streamlit demo apps but more geared towards O
 To run the app locally:
 
 ```
-$ cd ooh-events
+$ cd streamlit-ooh-demo
 $ python3 -m venv .venv
 $ 
 $ source .venv/bin/activate

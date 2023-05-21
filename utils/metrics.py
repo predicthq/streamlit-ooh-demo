@@ -99,25 +99,6 @@ def show_metrics():
             previous_counts, NON_ATTENDED_CATEGORIES
         )
 
-        # Fetch Demand Surges
-        demand_surges = fetch_demand_surges(
-            location["lat"],
-            location["lon"],
-            radius,
-            date_from=date_from,
-            date_to=date_to,
-        )
-        demand_surges_count = len(demand_surges)
-
-        previous_demand_surges = fetch_demand_surges(
-            location["lat"],
-            location["lon"],
-            radius,
-            date_from=previous_date_from,
-            date_to=previous_date_to,
-        )
-        previous_demand_surges_count = len(previous_demand_surges)
-
         # Display metrics
         col1, col2, col3, col4 = st.columns(4)
 
